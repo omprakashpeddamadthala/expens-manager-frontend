@@ -5,8 +5,8 @@ import useExpenses from "../../hooks/useExpenses";
 const Dashboard = () => {
  const {expenses,error,isLoading} =useExpenses();
   return (
-    <div>
-      {error && <p>Error: {error}</p>}
+    <div className="container">
+        {error && <p>Error: {error}</p>}
       {isLoading && <p>status: {isLoading}</p>}
       <ExpenseList expenses={expenses} />
     </div>
