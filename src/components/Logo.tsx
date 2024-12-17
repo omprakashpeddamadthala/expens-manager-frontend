@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom"
 import logo from "../assets/logo.png"
 
 const Logo = () => {
   return (
-    <a className="navbar-brand">
+    <Link className="navbar-brand"   to ="/">
         <img
          src={logo}
          alt="logo"
@@ -12,7 +13,7 @@ const Logo = () => {
         >
         </img>
       
-    </a>
+    </Link>
   )
 }
 

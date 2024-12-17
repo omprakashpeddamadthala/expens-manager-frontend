@@ -12,7 +12,7 @@ const ExpenseList = ({ expenses }: Props) => {
       </h5>
       <div className="card-body">
         {expenses.map((expense) => (
-          <div>
+          <div key={expense.expenseId}>
             <div className="d-flex justify-content-between bordr-bottom-1 p-3 text-dark">
 
               <div className="card-title m-0">
