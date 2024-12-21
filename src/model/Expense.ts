@@ -4,6 +4,6 @@ export interface Expense {
     name : string
     note : string
     amount : number
-    categoty :string
+    category :string
     date : string
 }
